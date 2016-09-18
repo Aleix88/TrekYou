@@ -14,6 +14,7 @@
 		191E3FAA1D872D2400963531 /* TrekYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E3FA91D872D2400963531 /* TrekYouTests.swift */; };
 		191E3FB51D872DA300963531 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E3FB41D872DA300963531 /* MainViewController.swift */; };
 		191E3FB71D87300C00963531 /* MainScreenLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E3FB61D87300C00963531 /* MainScreenLayout.swift */; };
+		19E5A5A11D8E95E700B9B8DF /* Aple Time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19E5A5A01D8E953600B9B8DF /* Aple Time.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		191E3FAB1D872D2400963531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		191E3FB41D872DA300963531 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		191E3FB61D87300C00963531 /* MainScreenLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenLayout.swift; sourceTree = "<group>"; };
+		19E5A5A01D8E953600B9B8DF /* Aple Time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aple Time.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				191E3F981D872D2400963531 /* Main.storyboard */,
 				191E3FB41D872DA300963531 /* MainViewController.swift */,
 				191E3FB61D87300C00963531 /* MainScreenLayout.swift */,
+				19E5A5A01D8E953600B9B8DF /* Aple Time.ttf */,
 				191E3F9B1D872D2400963531 /* Assets.xcassets */,
 				191E3F9D1D872D2400963531 /* LaunchScreen.storyboard */,
 				191E3FA01D872D2400963531 /* Info.plist */,
@@ -180,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E5A5A11D8E95E700B9B8DF /* Aple Time.ttf in Resources */,
 				191E3F9F1D872D2400963531 /* LaunchScreen.storyboard in Resources */,
 				191E3F9C1D872D2400963531 /* Assets.xcassets in Resources */,
 				191E3F9A1D872D2400963531 /* Main.storyboard in Resources */,
@@ -394,6 +398,7 @@
 				191E3FB01D872D2400963531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		191E3FB11D872D2400963531 /* Build configuration list for PBXNativeTarget "TrekYouTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +407,7 @@
 				191E3FB31D872D2400963531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

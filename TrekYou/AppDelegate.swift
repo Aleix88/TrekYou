@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().barTintColor = UIColor.whiteColor()
+        var shadow = NSShadow()
+        shadow.shadowColor! = UIColor.clearColor()
+        shadow.shadowOffset = CGSizeMake(0, 0)
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSForegroundColorAttributeName : UIColor.blackColor(),
+            NSShadowAttributeName : shadow,
+            NSFontAttributeName : UIFont(name: "Aple Time", size: 19.0)!
+        ];
+        
         return true
     }
 

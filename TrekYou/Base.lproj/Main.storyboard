@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="U0l-eR-PCb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4zl-YR-zSI">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--TrekYou-->
         <scene sceneID="P2l-jK-R9X">
             <objects>
                 <viewController id="U0l-eR-PCb" customClass="MainViewController" customModule="TrekYou" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,12 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sWj-Ff-mHO">
-                                <rect key="frame" x="0.0" y="55" width="600" height="545"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sWj-Ff-mHO" userLabel="TopCollectionView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="285"/>
                                 <collectionViewLayout key="collectionViewLayout" id="TQj-wR-huF" customClass="MainScreenLayout" customModule="TrekYou" customModuleProvider="target"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Xwd-Ko-op2">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="64" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -37,20 +37,65 @@
                                     <outlet property="delegate" destination="U0l-eR-PCb" id="V11-lP-AFf"/>
                                 </connections>
                             </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yqN-Rn-4aG">
+                                <rect key="frame" x="0.0" y="285" width="600" height="315"/>
+                                <collectionViewLayout key="collectionViewLayout" id="VRW-iA-P5G" customClass="MainScreenLayout" customModule="TrekYou" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="xA7-Dr-NG0">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="U0l-eR-PCb" id="afM-sx-zyM"/>
+                                    <outlet property="delegate" destination="U0l-eR-PCb" id="Kab-ch-BDL"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="sWj-Ff-mHO" firstAttribute="top" secondItem="zfW-wm-aIl" secondAttribute="bottom" constant="35" id="ARD-Mh-zUA"/>
+                            <constraint firstItem="sWj-Ff-mHO" firstAttribute="top" secondItem="zfW-wm-aIl" secondAttribute="bottom" constant="-64" id="ARD-Mh-zUA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yqN-Rn-4aG" secondAttribute="trailing" constant="-20" id="EJM-kg-Vot"/>
                             <constraint firstItem="sWj-Ff-mHO" firstAttribute="leading" secondItem="Ic9-Ku-ta1" secondAttribute="leadingMargin" constant="-20" id="R5A-gh-3KQ"/>
-                            <constraint firstItem="e3b-9w-NVU" firstAttribute="top" secondItem="sWj-Ff-mHO" secondAttribute="bottom" id="bpO-RP-efC"/>
+                            <constraint firstItem="e3b-9w-NVU" firstAttribute="top" secondItem="yqN-Rn-4aG" secondAttribute="bottom" id="U2w-He-3Qz"/>
+                            <constraint firstItem="yqN-Rn-4aG" firstAttribute="leading" secondItem="Ic9-Ku-ta1" secondAttribute="leadingMargin" constant="-20" id="Vwe-3o-YSc"/>
+                            <constraint firstItem="e3b-9w-NVU" firstAttribute="top" secondItem="sWj-Ff-mHO" secondAttribute="bottom" constant="315" id="bpO-RP-efC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sWj-Ff-mHO" secondAttribute="trailing" constant="-20" id="oKc-is-qgz"/>
+                            <constraint firstItem="yqN-Rn-4aG" firstAttribute="top" secondItem="sWj-Ff-mHO" secondAttribute="bottom" id="yBl-yj-kNx"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="TrekYou" id="cdD-bN-pZu">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;-" id="Red-Mr-7BL"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="bottomCollectionView" destination="yqN-Rn-4aG" id="xNd-zR-h0d"/>
                         <outlet property="collectionView" destination="sWj-Ff-mHO" id="c7k-Eh-syP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u8L-qm-LxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-347" y="-26"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ahN-3x-6oQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4zl-YR-zSI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tse-Ae-V4o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="U0l-eR-PCb" kind="relationship" relationship="rootViewController" id="pJD-TJ-ERL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rjM-Co-uRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1159" y="-26"/>
         </scene>

@@ -35,33 +35,22 @@ class MainScreenLayout: UICollectionViewFlowLayout {
         let mainViewHeight: CGFloat = CGRectGetHeight(delegate!.getMainViewFrame())
         let headerViewHeight:CGFloat = mainViewHeight/10
         
-        for section in 0 ..< collectionView!.numberOfSections() {
-
             cache = [UICollectionViewLayoutAttributes]()
-            if section == 0 {
-                caches = [[UICollectionViewLayoutAttributes]]()
-            }
-            //Com es que aqui agafa el numberOfItems del viewController???????
+        
             for item in 0 ..< numberOfItems{
                 
-                let indexPath = NSIndexPath(forItem: item, inSection: section)
+                let indexPath = NSIndexPath(forItem: item, inSection: 0)
                 let attribute = UICollectionViewLayoutAttributes(forCellWithIndexPath: indexPath)
                 elementWidth = ((2*mainViewWidth) - (4*cellPaddingX))/3
                 elementHeight = mainViewHeight/3
                 if item == 0 {
-                    yPositions.append((CGFloat(section+1)*headerViewHeight) + (elementHeight*CGFloat(section)))
+                    yPositions.append((CGFloat(1)*headerViewHeight))
                 }
                 xPositions.append(((mainViewWidth/2)-(elementWidth/2)) + (elementWidth*CGFloat(item)) + (cellPaddingX*CGFloat(item)))
-                let numberOfItemsInSection = section * numberOfItems
-                attribute.frame = CGRect(x: xPositions[item+numberOfItemsInSection], y: yPositions[section], width: elementWidth, height: elementHeight)
+                attribute.frame = CGRect(x: xPositions[item], y: yPositions[0], width: elementWidth, height: elementHeight)
                 
                 cache.append(attribute)
             }
-            
-            caches.append(cache)
-            
-        }
-        
     }
     
     override func collectionViewContentSize() -> CGSize {
@@ -71,16 +60,7 @@ class MainScreenLayout: UICollectionViewFlowLayout {
     }
     
     override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        
-        var cache2 = [UICollectionViewLayoutAttributes]()
-        for section in caches {
-        
-            for att in section {
-                cache2.append(att)
-            }
-            
-        }
-        return cache2
+        return cache
     }
     
 

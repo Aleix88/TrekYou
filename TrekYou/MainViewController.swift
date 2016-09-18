@@ -15,13 +15,15 @@ let cellIdentifier = "Cell"
 class MainViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
-
+    @IBOutlet weak var bottomCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         (collectionView.collectionViewLayout as! MainScreenLayout).delegate = self
+        (bottomCollectionView.collectionViewLayout as! MainScreenLayout).delegate = self
         collectionView.backgroundColor = UIColor.whiteColor()
+        bottomCollectionView.backgroundColor = UIColor.whiteColor()
     }
-
 }
 
 extension MainViewController: UICollectionViewDataSource {

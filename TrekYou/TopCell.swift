@@ -15,7 +15,6 @@ class TopCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-//        self.layer.cornerRadius = 10
         self.backgroundColor = UIColor.clearColor()
         self.layer.masksToBounds = false
         self.layer.shadowOffset = CGSizeMake(-5, 10)

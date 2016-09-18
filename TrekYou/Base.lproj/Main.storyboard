@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sWj-Ff-mHO" userLabel="TopCollectionView">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="303"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sWj-Ff-mHO" userLabel="TopCollectionView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="229"/>
                                 <collectionViewLayout key="collectionViewLayout" id="TQj-wR-huF" customClass="MainScreenLayout" customModule="TrekYou" customModuleProvider="target"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" reuseIdentifier="TopCell" id="Xwd-Ko-op2">
@@ -38,7 +38,7 @@
                                 </connections>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yqN-Rn-4aG">
-                                <rect key="frame" x="0.0" y="285" width="600" height="315"/>
+                                <rect key="frame" x="0.0" y="425" width="600" height="187"/>
                                 <collectionViewLayout key="collectionViewLayout" id="VRW-iA-P5G" customClass="MainScreenLayout" customModule="TrekYou" customModuleProvider="target"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" reuseIdentifier="TopCell" id="xA7-Dr-NG0">
@@ -59,14 +59,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="sWj-Ff-mHO" firstAttribute="top" secondItem="zfW-wm-aIl" secondAttribute="bottom" constant="-64" id="ARD-Mh-zUA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yqN-Rn-4aG" secondAttribute="trailing" constant="-20" id="EJM-kg-Vot"/>
-                            <constraint firstItem="sWj-Ff-mHO" firstAttribute="leading" secondItem="Ic9-Ku-ta1" secondAttribute="leadingMargin" constant="-20" id="R5A-gh-3KQ"/>
-                            <constraint firstItem="e3b-9w-NVU" firstAttribute="top" secondItem="yqN-Rn-4aG" secondAttribute="bottom" id="U2w-He-3Qz"/>
-                            <constraint firstItem="yqN-Rn-4aG" firstAttribute="leading" secondItem="Ic9-Ku-ta1" secondAttribute="leadingMargin" constant="-20" id="Vwe-3o-YSc"/>
-                            <constraint firstItem="e3b-9w-NVU" firstAttribute="top" secondItem="sWj-Ff-mHO" secondAttribute="bottom" constant="297" id="bpO-RP-efC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sWj-Ff-mHO" secondAttribute="trailing" constant="-20" id="oKc-is-qgz"/>
-                            <constraint firstItem="yqN-Rn-4aG" firstAttribute="top" secondItem="sWj-Ff-mHO" secondAttribute="bottom" constant="-18" id="yBl-yj-kNx"/>
+                            <constraint firstItem="yqN-Rn-4aG" firstAttribute="top" secondItem="zfW-wm-aIl" secondAttribute="bottom" constant="361" id="Shp-Mm-oP4"/>
+                            <constraint firstItem="e3b-9w-NVU" firstAttribute="top" secondItem="sWj-Ff-mHO" secondAttribute="bottom" constant="307" id="TU5-CC-YsS"/>
+                            <constraint firstItem="sWj-Ff-mHO" firstAttribute="top" secondItem="Ic9-Ku-ta1" secondAttribute="topMargin" constant="64" id="Vo6-AR-LBf"/>
+                            <constraint firstItem="e3b-9w-NVU" firstAttribute="top" secondItem="yqN-Rn-4aG" secondAttribute="bottom" constant="-12" id="ZcV-am-9Hq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sWj-Ff-mHO" secondAttribute="trailing" constant="-20" id="dD3-e8-ELm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yqN-Rn-4aG" secondAttribute="trailing" constant="-20" id="iSp-Dm-kMT"/>
+                            <constraint firstItem="yqN-Rn-4aG" firstAttribute="leading" secondItem="Ic9-Ku-ta1" secondAttribute="leadingMargin" constant="-20" id="rov-7M-jn1"/>
+                            <constraint firstItem="sWj-Ff-mHO" firstAttribute="leading" secondItem="Ic9-Ku-ta1" secondAttribute="leadingMargin" constant="-20" id="xdg-qI-lNG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="TrekYou" id="cdD-bN-pZu">

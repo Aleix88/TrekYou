@@ -21,8 +21,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         (collectionView.collectionViewLayout as! MainScreenLayout).delegate = self
         (bottomCollectionView.collectionViewLayout as! MainScreenLayout).delegate = self
-        collectionView.backgroundColor = UIColor.clearColor()
-        bottomCollectionView.backgroundColor = UIColor.clearColor()
+        collectionView.backgroundColor = UIColor.redColor()
+        bottomCollectionView.backgroundColor = UIColor.blueColor()
         let nib = UINib(nibName: "TopCell", bundle: nil)
         collectionView.registerNib(nib, forCellWithReuseIdentifier: "TopCell")
         bottomCollectionView.registerNib(nib, forCellWithReuseIdentifier: "TopCell")

@@ -27,14 +27,12 @@ class MainScreenLayout: UICollectionViewFlowLayout {
     var cellPaddingY:CGFloat = 5
     var cache = [UICollectionViewLayoutAttributes]()
     var delegate: MainLayoutDelegate?
-    var headerViewHeight: CGFloat!
     
     override func prepareLayout() {
         super.prepareLayout()
         self.scrollDirection = .Horizontal
         let mainViewWidth: CGFloat = CGRectGetWidth(delegate!.getMainViewFrame())
         let mainViewHeight: CGFloat = CGRectGetHeight(delegate!.getMainViewFrame())
-        headerViewHeight = mainViewHeight/10
         
             cache = [UICollectionViewLayoutAttributes]()
         
@@ -44,9 +42,7 @@ class MainScreenLayout: UICollectionViewFlowLayout {
                 let attribute = UICollectionViewLayoutAttributes(forCellWithIndexPath: indexPath)
                 elementWidth = ((2*mainViewWidth) - (4*cellPaddingX))/3
                 elementHeight = mainViewHeight/3
-                if item == 0 {
-                    yPositions.append((CGFloat(1)*headerViewHeight))
-                }
+                yPositions.append(0)
                 xPositions.append(((mainViewWidth/2)-(elementWidth/2)) + (elementWidth*CGFloat(item)) + (cellPaddingX*CGFloat(item)))
                 attribute.frame = CGRect(x: xPositions[item], y: yPositions[0], width: elementWidth, height: elementHeight)
                 

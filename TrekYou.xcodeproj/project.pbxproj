@@ -14,7 +14,10 @@
 		191E3FAA1D872D2400963531 /* TrekYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E3FA91D872D2400963531 /* TrekYouTests.swift */; };
 		191E3FB51D872DA300963531 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E3FB41D872DA300963531 /* MainViewController.swift */; };
 		191E3FB71D87300C00963531 /* MainScreenLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E3FB61D87300C00963531 /* MainScreenLayout.swift */; };
+		19C285F51D8F19EE0050EF72 /* minimal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19C285F41D8F19E30050EF72 /* minimal.otf */; };
 		19E5A5A11D8E95E700B9B8DF /* Aple Time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19E5A5A01D8E953600B9B8DF /* Aple Time.ttf */; };
+		19E5A5A41D8EA22600B9B8DF /* TopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E5A5A21D8EA22600B9B8DF /* TopCell.swift */; };
+		19E5A5A51D8EA22600B9B8DF /* TopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19E5A5A31D8EA22600B9B8DF /* TopCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,10 @@
 		191E3FAB1D872D2400963531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		191E3FB41D872DA300963531 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		191E3FB61D87300C00963531 /* MainScreenLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenLayout.swift; sourceTree = "<group>"; };
+		19C285F41D8F19E30050EF72 /* minimal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = minimal.otf; sourceTree = "<group>"; };
 		19E5A5A01D8E953600B9B8DF /* Aple Time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aple Time.ttf"; sourceTree = "<group>"; };
+		19E5A5A21D8EA22600B9B8DF /* TopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopCell.swift; sourceTree = "<group>"; };
+		19E5A5A31D8EA22600B9B8DF /* TopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +89,8 @@
 			children = (
 				191E3F941D872D2400963531 /* AppDelegate.swift */,
 				191E3F981D872D2400963531 /* Main.storyboard */,
-				191E3FB41D872DA300963531 /* MainViewController.swift */,
-				191E3FB61D87300C00963531 /* MainScreenLayout.swift */,
-				19E5A5A01D8E953600B9B8DF /* Aple Time.ttf */,
+				19C285F61D8F1A810050EF72 /* MainScreen */,
+				19C285F31D8F16A90050EF72 /* Fonts */,
 				191E3F9B1D872D2400963531 /* Assets.xcassets */,
 				191E3F9D1D872D2400963531 /* LaunchScreen.storyboard */,
 				191E3FA01D872D2400963531 /* Info.plist */,
@@ -100,6 +105,26 @@
 				191E3FAB1D872D2400963531 /* Info.plist */,
 			);
 			path = TrekYouTests;
+			sourceTree = "<group>";
+		};
+		19C285F31D8F16A90050EF72 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				19C285F41D8F19E30050EF72 /* minimal.otf */,
+				19E5A5A01D8E953600B9B8DF /* Aple Time.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		19C285F61D8F1A810050EF72 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				191E3FB41D872DA300963531 /* MainViewController.swift */,
+				19E5A5A21D8EA22600B9B8DF /* TopCell.swift */,
+				191E3FB61D87300C00963531 /* MainScreenLayout.swift */,
+				19E5A5A31D8EA22600B9B8DF /* TopCell.xib */,
+			);
+			name = MainScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +208,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19C285F51D8F19EE0050EF72 /* minimal.otf in Resources */,
 				19E5A5A11D8E95E700B9B8DF /* Aple Time.ttf in Resources */,
 				191E3F9F1D872D2400963531 /* LaunchScreen.storyboard in Resources */,
+				19E5A5A51D8EA22600B9B8DF /* TopCell.xib in Resources */,
 				191E3F9C1D872D2400963531 /* Assets.xcassets in Resources */,
 				191E3F9A1D872D2400963531 /* Main.storyboard in Resources */,
 			);
@@ -207,6 +234,7 @@
 				191E3FB71D87300C00963531 /* MainScreenLayout.swift in Sources */,
 				191E3F951D872D2400963531 /* AppDelegate.swift in Sources */,
 				191E3FB51D872DA300963531 /* MainViewController.swift in Sources */,
+				19E5A5A41D8EA22600B9B8DF /* TopCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

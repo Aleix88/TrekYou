@@ -9,20 +9,23 @@
 import UIKit
 
 let numberOfSections = 1
-let numberOfItems = 4
-let cellIdentifier = "Cell"
+let numberOfItems = 8
+let cellIdentifier = "TopCell"
 
 class MainViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var bottomCollectionView: UICollectionView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         (collectionView.collectionViewLayout as! MainScreenLayout).delegate = self
         (bottomCollectionView.collectionViewLayout as! MainScreenLayout).delegate = self
-        collectionView.backgroundColor = UIColor.whiteColor()
-        bottomCollectionView.backgroundColor = UIColor.whiteColor()
+        collectionView.backgroundColor = UIColor.clearColor()
+        bottomCollectionView.backgroundColor = UIColor.clearColor()
+        let nib = UINib(nibName: "TopCell", bundle: nil)
+        collectionView.registerNib(nib, forCellWithReuseIdentifier: "TopCell")
+        bottomCollectionView.registerNib(nib, forCellWithReuseIdentifier: "TopCell")
     }
 }
 
@@ -37,14 +40,17 @@ extension MainViewController: UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath)
-        cell.backgroundColor = UIColor.blueColor()
-        if indexPath.section == 1 {
-            cell.backgroundColor = UIColor.redColor()
-        }
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! TopCell
+        animateCell(cell)
         return cell
     }
-    
+    //S'hauria de provar l'animacio en el ipad per saber si la primera la fa be o rara.
+    func animateCell(cell: UICollectionViewCell){
+        cell.alpha = 0
+        UIView.animateWithDuration(1) {
+            cell.alpha = 1
+        }
+    }
 }
 
 extension MainViewController: MainLayoutDelegate {

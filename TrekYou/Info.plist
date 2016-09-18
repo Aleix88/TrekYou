@@ -39,6 +39,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Aple Time.ttf</string>
+		<string>minimal.otf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

@@ -36,7 +36,7 @@ class MainScreenLayout: UICollectionViewFlowLayout {
         
             cache = [UICollectionViewLayoutAttributes]()
         
-            for item in 0 ..< numberOfItems{
+            for item in 0 ..< collectionView!.numberOfItemsInSection(0){
                 
                 let indexPath = NSIndexPath(forItem: item, inSection: 0)
                 let attribute = UICollectionViewLayoutAttributes(forCellWithIndexPath: indexPath)

@@ -10,8 +10,13 @@ import UIKit
 
 class TopCell: UICollectionViewCell {
 
+    @IBOutlet weak var mountainView: UIImageView!
     @IBOutlet weak var blurView: UIVisualEffectView!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var placeName: UILabel!
+    
+    var mountainImage: UIImage!
+    var mountainDifficult: UInt8 = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +27,7 @@ class TopCell: UICollectionViewCell {
         self.layer.shadowOpacity = 0.3
         configureImageView()
         configureBlurView()
+        setMountainImage()
     }
     
     func configureImageView() {
@@ -32,6 +38,35 @@ class TopCell: UICollectionViewCell {
     func configureBlurView() {
         blurView.layer.masksToBounds = true
         blurView.layer.cornerRadius = 5
+    }
+    func setMountainImage() {
+        mountainImage = UIImage(named: "Montaña")
+        mountainView.image = mountainImage
+        let rect = CGRectMake(0, 0, mountainImage!.size.width, mountainImage!.size.height)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+        CGContextClipToMask(context, rect, mountainImage!
+            .CGImage!)
+        CGContextSetFillColorWithColor(context, selectColorDifficult().CGColor)
+        CGContextFillRect(context, rect)
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        let coloredImage = UIImage(CGImage: img.CGImage!, scale: 1.0, orientation: .DownMirrored)
+        mountainView.image! = coloredImage
+    }
+    
+    func selectColorDifficult()->UIColor{
+        switch  mountainDifficult {
+        case 0:
+            return UIColor.greenColor()
+        case 1:
+            return UIColor.orangeColor()
+        case 2:
+            return UIColor.redColor()
+        default:
+            return UIColor.blackColor()
+        }
+        
     }
 
 }

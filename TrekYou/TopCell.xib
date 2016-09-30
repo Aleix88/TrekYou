@@ -33,6 +33,9 @@
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cca-fF-g1i">
+                                    <rect key="frame" x="182" y="31" width="22" height="18"/>
+                                </imageView>
                             </subviews>
                         </view>
                         <blurEffect style="extraLight"/>
@@ -41,12 +44,16 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
+                <constraint firstItem="Cca-fF-g1i" firstAttribute="top" secondItem="iXf-gw-61Z" secondAttribute="top" constant="197" id="3Rs-jc-H50"/>
                 <constraint firstItem="V9X-Oe-U9F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="48w-1k-VpM"/>
                 <constraint firstAttribute="bottom" secondItem="iXf-gw-61Z" secondAttribute="bottom" id="69L-OP-rGv"/>
+                <constraint firstItem="Cca-fF-g1i" firstAttribute="leading" secondItem="iXf-gw-61Z" secondAttribute="leading" constant="182" id="EdY-Tw-BWj"/>
                 <constraint firstItem="iXf-gw-61Z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Fbt-VX-zWs"/>
                 <constraint firstAttribute="trailing" secondItem="V9X-Oe-U9F" secondAttribute="trailing" id="HjH-hc-0Mh"/>
+                <constraint firstItem="Cca-fF-g1i" firstAttribute="trailing" secondItem="iXf-gw-61Z" secondAttribute="trailing" constant="-9" id="JZb-ae-SHx"/>
                 <constraint firstAttribute="trailing" secondItem="iXf-gw-61Z" secondAttribute="trailing" id="OYd-z5-xiT"/>
                 <constraint firstAttribute="bottom" secondItem="V9X-Oe-U9F" secondAttribute="bottom" id="eVm-5Q-s2t"/>
+                <constraint firstItem="Cca-fF-g1i" firstAttribute="bottom" secondItem="iXf-gw-61Z" secondAttribute="bottom" constant="11" id="hnF-gM-nkG"/>
                 <constraint firstItem="iXf-gw-61Z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jaa-3Z-6Wb"/>
                 <constraint firstItem="V9X-Oe-U9F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="166" id="nVd-us-U2q"/>
             </constraints>
@@ -54,6 +61,8 @@
             <connections>
                 <outlet property="blurView" destination="V9X-Oe-U9F" id="mfT-gJ-chp"/>
                 <outlet property="imageView" destination="iXf-gw-61Z" id="grq-LU-YNc"/>
+                <outlet property="mountainView" destination="Cca-fF-g1i" id="PWp-1x-9bB"/>
+                <outlet property="placeName" destination="rDo-h7-xEq" id="KHx-2I-4BP"/>
             </connections>
             <point key="canvasLocation" x="434.5" y="284"/>
         </collectionViewCell>

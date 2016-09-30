@@ -38,6 +38,7 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
+		<string>CaviarDreams.ttf</string>
 		<string>Aple Time.ttf</string>
 		<string>minimal.otf</string>
 	</array>

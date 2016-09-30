@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sWj-Ff-mHO" userLabel="TopCollectionView">
-                                <rect key="frame" x="0.0" y="64" width="600" height="229"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="251"/>
                                 <collectionViewLayout key="collectionViewLayout" id="TQj-wR-huF" customClass="MainScreenLayout" customModule="TrekYou" customModuleProvider="target"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" reuseIdentifier="TopCell" id="Xwd-Ko-op2">
@@ -60,7 +60,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="yqN-Rn-4aG" firstAttribute="top" secondItem="zfW-wm-aIl" secondAttribute="bottom" constant="361" id="Shp-Mm-oP4"/>
-                            <constraint firstItem="e3b-9w-NVU" firstAttribute="top" secondItem="sWj-Ff-mHO" secondAttribute="bottom" constant="307" id="TU5-CC-YsS"/>
+                            <constraint firstItem="e3b-9w-NVU" firstAttribute="top" secondItem="sWj-Ff-mHO" secondAttribute="bottom" constant="285" id="TU5-CC-YsS"/>
                             <constraint firstItem="sWj-Ff-mHO" firstAttribute="top" secondItem="Ic9-Ku-ta1" secondAttribute="topMargin" constant="64" id="Vo6-AR-LBf"/>
                             <constraint firstItem="e3b-9w-NVU" firstAttribute="top" secondItem="yqN-Rn-4aG" secondAttribute="bottom" constant="-12" id="ZcV-am-9Hq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sWj-Ff-mHO" secondAttribute="trailing" constant="-20" id="dD3-e8-ELm"/>
@@ -70,7 +70,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="TrekYou" id="cdD-bN-pZu">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;-" id="Red-Mr-7BL"/>
+                        <barButtonItem key="leftBarButtonItem" title="&lt;-" id="Red-Mr-7BL">
+                            <connections>
+                                <action selector="pressMenuButton:" destination="U0l-eR-PCb" id="lEc-bC-v2X"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="bottomCollectionView" destination="yqN-Rn-4aG" id="xNd-zR-h0d"/>

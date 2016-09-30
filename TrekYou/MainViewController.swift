@@ -48,6 +48,9 @@ class MainViewController: UIViewController {
         slideMenu.setHeightForRows(50)
         slideMenu.registerNibAtIndex("SlideMenuCell", index: 1)
         slideMenu.registerNibAtIndex("TitleSlideMenuCell", index: 0)
+        slideMenu.registerNibAtIndex("MapMenuCell", index: 2)
+        slideMenu.registerNibAtIndex("StatisticsMenuCell", index: 3)
+        slideMenu.registerNibAtIndex("InfoMenuCell", index: 4)
         slideMenu.setHeightForRowAtIndexPath(100, indexPath: NSIndexPath(forRow: 0, inSection: 0))
         let currentWindow: UIWindow = UIApplication.sharedApplication().keyWindow!
         currentWindow.addSubview(slideMenu)

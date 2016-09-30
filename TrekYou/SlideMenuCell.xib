@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -15,24 +15,24 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filters" translatesAutoresizingMaskIntoConstraints="NO" id="yZJ-Ax-3fW">
+                        <rect key="frame" x="21" y="8" width="39" height="45"/>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Place." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMK-pT-t8V">
                         <rect key="frame" x="91" y="14" width="221" height="35.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Imagen" translatesAutoresizingMaskIntoConstraints="NO" id="yZJ-Ax-3fW">
-                        <rect key="frame" x="18" y="4" width="59" height="58"/>
-                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="NMK-pT-t8V" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="63D-jR-jJm"/>
-                    <constraint firstItem="yZJ-Ax-3fW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="Bch-KN-JF2"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="yZJ-Ax-3fW" secondAttribute="trailing" constant="235" id="GsL-Gd-woK"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="yZJ-Ax-3fW" secondAttribute="bottom" constant="-4.5" id="H7X-xE-JmO"/>
+                    <constraint firstItem="yZJ-Ax-3fW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Bch-KN-JF2"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="yZJ-Ax-3fW" secondAttribute="trailing" constant="252" id="GsL-Gd-woK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="yZJ-Ax-3fW" secondAttribute="bottom" constant="4.5" id="H7X-xE-JmO"/>
                     <constraint firstItem="NMK-pT-t8V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="jaO-nE-JjG"/>
-                    <constraint firstItem="yZJ-Ax-3fW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="lwZ-6p-CNl"/>
-                    <constraint firstItem="NMK-pT-t8V" firstAttribute="leading" secondItem="yZJ-Ax-3fW" secondAttribute="trailing" constant="14" id="s2I-ly-G0W"/>
+                    <constraint firstItem="yZJ-Ax-3fW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="13" id="lwZ-6p-CNl"/>
+                    <constraint firstItem="NMK-pT-t8V" firstAttribute="leading" secondItem="yZJ-Ax-3fW" secondAttribute="trailing" constant="31" id="s2I-ly-G0W"/>
                     <constraint firstAttribute="bottomMargin" secondItem="NMK-pT-t8V" secondAttribute="bottom" constant="8" id="vQi-Bp-lKp"/>
                 </constraints>
             </tableViewCellContentView>
@@ -40,6 +40,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Imagen" width="1920" height="1440"/>
+        <image name="Filters" width="512" height="512"/>
     </resources>
 </document>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfoMenuCell" rowHeight="66" id="KGk-i7-Jjw" customClass="InfoMenuCell" customModule="TrekYou" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About this app." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypq-MT-Nn4">
+                        <rect key="frame" x="91" y="14" width="221" height="35.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Info" translatesAutoresizingMaskIntoConstraints="NO" id="TJb-05-1UL">
+                        <rect key="frame" x="21" y="8" width="39" height="45"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="TJb-05-1UL" secondAttribute="bottom" constant="4.5" id="6uZ-26-oKv"/>
+                    <constraint firstItem="TJb-05-1UL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Fik-7q-Tr9"/>
+                    <constraint firstItem="ypq-MT-Nn4" firstAttribute="leading" secondItem="TJb-05-1UL" secondAttribute="trailing" constant="31" id="I5x-iT-JqA"/>
+                    <constraint firstItem="ypq-MT-Nn4" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Nwn-Hh-pHP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ypq-MT-Nn4" secondAttribute="bottom" constant="8" id="Uy6-fy-FY0"/>
+                    <constraint firstItem="ypq-MT-Nn4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="aBH-Cp-uyN"/>
+                    <constraint firstItem="TJb-05-1UL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="13" id="j4K-ch-WZ9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TJb-05-1UL" secondAttribute="trailing" constant="252" id="uYW-tN-pMm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="139" y="165"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Info" width="2133" height="2133"/>
+    </resources>
+</document>

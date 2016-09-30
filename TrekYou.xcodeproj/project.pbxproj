@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19148EDB1D9EFA050036BFE5 /* MapMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19148ED91D9EFA050036BFE5 /* MapMenuCell.xib */; };
+		19148EDF1D9EFD0A0036BFE5 /* StatisticsMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19148EDD1D9EFD0A0036BFE5 /* StatisticsMenuCell.xib */; };
+		19148EE31D9EFE8C0036BFE5 /* InfoMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19148EE11D9EFE8C0036BFE5 /* InfoMenuCell.xib */; };
 		191E3F951D872D2400963531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E3F941D872D2400963531 /* AppDelegate.swift */; };
 		191E3F9A1D872D2400963531 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191E3F981D872D2400963531 /* Main.storyboard */; };
 		191E3F9C1D872D2400963531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191E3F9B1D872D2400963531 /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19148ED91D9EFA050036BFE5 /* MapMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapMenuCell.xib; sourceTree = "<group>"; };
+		19148EDD1D9EFD0A0036BFE5 /* StatisticsMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatisticsMenuCell.xib; sourceTree = "<group>"; };
+		19148EE11D9EFE8C0036BFE5 /* InfoMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoMenuCell.xib; sourceTree = "<group>"; };
 		191E3F911D872D2400963531 /* TrekYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrekYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		191E3F941D872D2400963531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		191E3F991D872D2400963531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,7 +135,10 @@
 			children = (
 				193450491D9AF7D100BB08BC /* DropdownMenuView.swift */,
 				1988A8381D9C5DD8009C7D2A /* SlideMenuCell.xib */,
+				19148ED91D9EFA050036BFE5 /* MapMenuCell.xib */,
 				1988A83C1D9C605C009C7D2A /* TitleSlideMenuCell.xib */,
+				19148EDD1D9EFD0A0036BFE5 /* StatisticsMenuCell.xib */,
+				19148EE11D9EFE8C0036BFE5 /* InfoMenuCell.xib */,
 			);
 			name = SlideMenu;
 			sourceTree = "<group>";
@@ -243,9 +252,12 @@
 				19E5A5A11D8E95E700B9B8DF /* Aple Time.ttf in Resources */,
 				191E3F9F1D872D2400963531 /* LaunchScreen.storyboard in Resources */,
 				19E5A5A51D8EA22600B9B8DF /* TopCell.xib in Resources */,
+				19148EE31D9EFE8C0036BFE5 /* InfoMenuCell.xib in Resources */,
 				191E3F9C1D872D2400963531 /* Assets.xcassets in Resources */,
 				191E3F9A1D872D2400963531 /* Main.storyboard in Resources */,
 				1988A83E1D9C605C009C7D2A /* TitleSlideMenuCell.xib in Resources */,
+				19148EDF1D9EFD0A0036BFE5 /* StatisticsMenuCell.xib in Resources */,
+				19148EDB1D9EFA050036BFE5 /* MapMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

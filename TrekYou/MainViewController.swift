@@ -23,7 +23,6 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         congigureCollectionView()
         headerTopLabel = TopLabel(mainViewFrame: self.view.frame)
-        placesData.addPlace("Gorgs de la Febro", image: UIImage(named: "Imagen")!, difficult: 1)
         setMenuProperties()
         self.view.addSubview(headerTopLabel)
     }
@@ -68,7 +67,7 @@ extension MainViewController: UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return placesData.places.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {

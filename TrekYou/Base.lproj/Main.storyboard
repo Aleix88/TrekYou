@@ -5,6 +5,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="CaviarDreams.ttf">
+            <string>CaviarDreams</string>
+            <string>CaviarDreams</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--TrekYou-->
         <scene sceneID="P2l-jK-R9X">
@@ -56,15 +62,39 @@
                                     <outlet property="delegate" destination="U0l-eR-PCb" id="Kab-ch-BDL"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cerca de ti:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfE-V1-xoz">
+                                <rect key="frame" x="20" y="376" width="508" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Cp6-tb-ft2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CaviarDreams" family="Caviar Dreams" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuestros favoritos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acK-4L-fjM">
+                                <rect key="frame" x="20" y="72" width="508" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="YuC-iQ-flo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CaviarDreams" family="Caviar Dreams" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="gfE-V1-xoz" secondAttribute="trailing" constant="51" id="13Q-jN-7TY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="acK-4L-fjM" secondAttribute="trailing" constant="52" id="BeC-HE-dXi"/>
                             <constraint firstItem="yqN-Rn-4aG" firstAttribute="top" secondItem="zfW-wm-aIl" secondAttribute="bottom" constant="361" id="Shp-Mm-oP4"/>
                             <constraint firstItem="e3b-9w-NVU" firstAttribute="top" secondItem="sWj-Ff-mHO" secondAttribute="bottom" constant="285" id="TU5-CC-YsS"/>
                             <constraint firstItem="sWj-Ff-mHO" firstAttribute="top" secondItem="Ic9-Ku-ta1" secondAttribute="topMargin" constant="64" id="Vo6-AR-LBf"/>
+                            <constraint firstItem="acK-4L-fjM" firstAttribute="leading" secondItem="Ic9-Ku-ta1" secondAttribute="leadingMargin" id="YWF-kc-lUA"/>
                             <constraint firstItem="e3b-9w-NVU" firstAttribute="top" secondItem="yqN-Rn-4aG" secondAttribute="bottom" constant="-12" id="ZcV-am-9Hq"/>
+                            <constraint firstItem="gfE-V1-xoz" firstAttribute="top" secondItem="zfW-wm-aIl" secondAttribute="bottom" constant="308" id="atz-MI-Fkg"/>
+                            <constraint firstItem="acK-4L-fjM" firstAttribute="top" secondItem="zfW-wm-aIl" secondAttribute="bottom" constant="8" id="bQj-4y-zPc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sWj-Ff-mHO" secondAttribute="trailing" constant="-20" id="dD3-e8-ELm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yqN-Rn-4aG" secondAttribute="trailing" constant="-20" id="iSp-Dm-kMT"/>
+                            <constraint firstItem="gfE-V1-xoz" firstAttribute="leading" secondItem="Ic9-Ku-ta1" secondAttribute="leadingMargin" constant="1" id="kba-2O-gIi"/>
                             <constraint firstItem="yqN-Rn-4aG" firstAttribute="leading" secondItem="Ic9-Ku-ta1" secondAttribute="leadingMargin" constant="-20" id="rov-7M-jn1"/>
                             <constraint firstItem="sWj-Ff-mHO" firstAttribute="leading" secondItem="Ic9-Ku-ta1" secondAttribute="leadingMargin" constant="-20" id="xdg-qI-lNG"/>
                         </constraints>

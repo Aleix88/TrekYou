@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4zl-YR-zSI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QqI-Uq-YZm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -7,6 +7,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="CaviarDreams.ttf">
+            <string>CaviarDreams</string>
             <string>CaviarDreams</string>
             <string>CaviarDreams</string>
         </mutableArray>
@@ -116,6 +117,114 @@
             </objects>
             <point key="canvasLocation" x="-347" y="-26"/>
         </scene>
+        <!--TrekYou-->
+        <scene sceneID="Obh-6U-J6f">
+            <objects>
+                <viewController id="FLu-Nd-uTP" customClass="FilterPlacesViewController" customModule="TrekYou" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Exh-0R-Sv3"/>
+                        <viewControllerLayoutGuide type="bottom" id="RcU-Wc-PRv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qqa-0j-CcU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hmn-hg-iZl">
+                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="6Yv-sx-giS">
+                                    <size key="itemSize" width="308" height="395"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="HTd-h5-mwj" customClass="FilterCell" customModule="TrekYou" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="134.5" width="308" height="395"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="308" height="395"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Imagen" translatesAutoresizingMaskIntoConstraints="NO" id="YU4-EL-mSr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="308" height="301"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Imagen" translatesAutoresizingMaskIntoConstraints="NO" id="Tch-XW-Ldn">
+                                                    <rect key="frame" x="0.0" y="296" width="308" height="99"/>
+                                                </imageView>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tO6-Fc-lF3">
+                                                    <rect key="frame" x="0.0" y="296" width="308" height="99"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="d8c-TJ-ie7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="308" height="99"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gorgs de la Febro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzM-6l-5ws">
+                                                                <rect key="frame" x="8" y="8" width="292" height="57"/>
+                                                                <fontDescription key="fontDescription" name="CaviarDreams" family="Caviar Dreams" pointSize="23"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Montaña" translatesAutoresizingMaskIntoConstraints="NO" id="D24-3T-xi7">
+                                                                <rect key="frame" x="251" y="66" width="44" height="44"/>
+                                                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="D24-3T-xi7" secondAttribute="bottom" constant="-11" id="2vD-Ka-o01"/>
+                                                            <constraint firstItem="WzM-6l-5ws" firstAttribute="top" secondItem="d8c-TJ-ie7" secondAttribute="top" constant="8" id="Afl-TP-pnP"/>
+                                                            <constraint firstItem="D24-3T-xi7" firstAttribute="top" secondItem="d8c-TJ-ie7" secondAttribute="top" constant="66" id="Bh2-UR-GNj"/>
+                                                            <constraint firstItem="D24-3T-xi7" firstAttribute="leading" secondItem="d8c-TJ-ie7" secondAttribute="leading" constant="251" id="Odd-7t-ZXd"/>
+                                                            <constraint firstAttribute="bottom" secondItem="WzM-6l-5ws" secondAttribute="bottom" constant="34" id="cVF-ZL-opY"/>
+                                                            <constraint firstItem="WzM-6l-5ws" firstAttribute="leading" secondItem="d8c-TJ-ie7" secondAttribute="leading" constant="8" id="leh-Y8-dBA"/>
+                                                            <constraint firstAttribute="trailing" secondItem="D24-3T-xi7" secondAttribute="trailing" constant="13" id="lwK-og-5v7"/>
+                                                            <constraint firstAttribute="trailing" secondItem="WzM-6l-5ws" secondAttribute="trailing" constant="8" id="qNs-MT-0Av"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <blurEffect style="light"/>
+                                                </visualEffectView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Tch-XW-Ldn" secondAttribute="trailing" constant="-8" id="65k-w0-ZFR"/>
+                                            <constraint firstItem="tO6-Fc-lF3" firstAttribute="top" secondItem="HTd-h5-mwj" secondAttribute="topMargin" constant="288" id="J7U-2s-4kV"/>
+                                            <constraint firstItem="Tch-XW-Ldn" firstAttribute="leading" secondItem="HTd-h5-mwj" secondAttribute="leadingMargin" constant="-8" id="NEo-Hy-eWJ"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="Tch-XW-Ldn" secondAttribute="bottom" constant="-8" id="fwh-8E-TD6"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="YU4-EL-mSr" secondAttribute="bottom" constant="86" id="g6T-Y1-gV5"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="tO6-Fc-lF3" secondAttribute="bottom" constant="-8" id="jec-i5-0Rh"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="YU4-EL-mSr" secondAttribute="trailing" constant="-8" id="osx-yA-QeS"/>
+                                            <constraint firstItem="tO6-Fc-lF3" firstAttribute="leading" secondItem="HTd-h5-mwj" secondAttribute="leadingMargin" constant="-8" id="rY4-Mi-S8Q"/>
+                                            <constraint firstItem="YU4-EL-mSr" firstAttribute="top" secondItem="HTd-h5-mwj" secondAttribute="topMargin" constant="-8" id="tm3-a8-qBV"/>
+                                            <constraint firstItem="Tch-XW-Ldn" firstAttribute="top" secondItem="HTd-h5-mwj" secondAttribute="topMargin" constant="288" id="uJl-oa-Yk6"/>
+                                            <constraint firstItem="YU4-EL-mSr" firstAttribute="leading" secondItem="HTd-h5-mwj" secondAttribute="leadingMargin" constant="-8" id="wcj-S4-IzQ"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="tO6-Fc-lF3" secondAttribute="trailing" constant="-8" id="xRe-A4-cyp"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="FLu-Nd-uTP" id="aNO-yL-Lyn"/>
+                                    <outlet property="delegate" destination="FLu-Nd-uTP" id="6yt-NV-ZpC"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hmn-hg-iZl" firstAttribute="top" secondItem="qqa-0j-CcU" secondAttribute="topMargin" id="Kjd-uB-FI2"/>
+                            <constraint firstItem="RcU-Wc-PRv" firstAttribute="top" secondItem="hmn-hg-iZl" secondAttribute="bottom" id="d7T-nZ-M3e"/>
+                            <constraint firstItem="hmn-hg-iZl" firstAttribute="leading" secondItem="qqa-0j-CcU" secondAttribute="leadingMargin" id="dHD-PN-ejl"/>
+                            <constraint firstItem="hmn-hg-iZl" firstAttribute="trailing" secondItem="qqa-0j-CcU" secondAttribute="trailingMargin" id="gbf-Di-q1j"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TrekYou" id="xJa-Dm-n5s"/>
+                    <connections>
+                        <outlet property="collectionView" destination="hmn-hg-iZl" id="DAO-Ze-sm7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G6d-tt-2eM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1177" y="-571"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ahN-3x-6oQ">
             <objects>
@@ -134,8 +243,28 @@
             </objects>
             <point key="canvasLocation" x="-1159" y="-26"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="q3v-kV-rK8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QqI-Uq-YZm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PKQ-TV-jap">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FLu-Nd-uTP" kind="relationship" relationship="rootViewController" id="j0J-w6-obL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IBM-hm-F8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365" y="-571"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Imagen" width="1920" height="1440"/>
         <image name="Menu" width="32" height="24"/>
+        <image name="Montaña" width="626" height="626"/>
     </resources>
 </document>

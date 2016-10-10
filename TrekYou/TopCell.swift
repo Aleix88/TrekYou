@@ -16,7 +16,7 @@ class TopCell: UICollectionViewCell {
     @IBOutlet weak var placeName: UILabel!
     
     var mountainImage: UIImage!
-    var mountainDifficult: UInt8 = 0
+    var mountainDifficult: UInt8 = 2
     
     override func awakeFromNib() {
         super.awakeFromNib()

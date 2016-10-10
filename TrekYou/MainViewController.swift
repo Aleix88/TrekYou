@@ -41,7 +41,6 @@ class MainViewController: UIViewController {
         
         let width = CGRectGetWidth(self.view.frame)/1.2
         let height = CGRectGetHeight(self.view.frame)
-        
         slideMenu = DropdownMenuView(menuWidth: width, menuHeight: height, viewController: MainViewController(), mainViewView: self.view)
         slideMenu.setNumberOfRows(10)
         slideMenu.setHeightForRows(50)
@@ -72,8 +71,8 @@ extension MainViewController: UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! TopCell
-        cell.placeName.text = placesData.getPlace(0).name
-        cell.mountainDifficult = placesData.getPlace(0).difficult
+        cell.placeName.text = placesData.getPlace(indexPath.row).name
+        cell.mountainDifficult = placesData.getPlace(indexPath.row).difficult
         animateCell(cell)
         return cell
     }

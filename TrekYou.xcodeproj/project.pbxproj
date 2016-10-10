@@ -10,6 +10,8 @@
 		19148EDB1D9EFA050036BFE5 /* MapMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19148ED91D9EFA050036BFE5 /* MapMenuCell.xib */; };
 		19148EDF1D9EFD0A0036BFE5 /* StatisticsMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19148EDD1D9EFD0A0036BFE5 /* StatisticsMenuCell.xib */; };
 		19148EE31D9EFE8C0036BFE5 /* InfoMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19148EE11D9EFE8C0036BFE5 /* InfoMenuCell.xib */; };
+		19148EE51D9F096B0036BFE5 /* FilterPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19148EE41D9F096B0036BFE5 /* FilterPlacesViewController.swift */; };
+		191B46E01DA19CE600DE1C82 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191B46DF1DA19CE600DE1C82 /* FilterCell.swift */; };
 		191E3F951D872D2400963531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E3F941D872D2400963531 /* AppDelegate.swift */; };
 		191E3F9A1D872D2400963531 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191E3F981D872D2400963531 /* Main.storyboard */; };
 		191E3F9C1D872D2400963531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191E3F9B1D872D2400963531 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		19148ED91D9EFA050036BFE5 /* MapMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapMenuCell.xib; sourceTree = "<group>"; };
 		19148EDD1D9EFD0A0036BFE5 /* StatisticsMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatisticsMenuCell.xib; sourceTree = "<group>"; };
 		19148EE11D9EFE8C0036BFE5 /* InfoMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoMenuCell.xib; sourceTree = "<group>"; };
+		19148EE41D9F096B0036BFE5 /* FilterPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterPlacesViewController.swift; sourceTree = "<group>"; };
+		191B46DF1DA19CE600DE1C82 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 		191E3F911D872D2400963531 /* TrekYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrekYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		191E3F941D872D2400963531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		191E3F991D872D2400963531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				191E3F9B1D872D2400963531 /* Assets.xcassets */,
 				191E3F9D1D872D2400963531 /* LaunchScreen.storyboard */,
 				191E3FA01D872D2400963531 /* Info.plist */,
+				19148EE41D9F096B0036BFE5 /* FilterPlacesViewController.swift */,
+				191B46DF1DA19CE600DE1C82 /* FilterCell.swift */,
 				19ECA7B71D99A6E2004713D9 /* PlacesData.swift */,
 				19ECA7E91D99BE54004713D9 /* Place.swift */,
 			);
@@ -275,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19148EE51D9F096B0036BFE5 /* FilterPlacesViewController.swift in Sources */,
 				19ABFCE51D8FEE7200B1D89A /* TopLabel.swift in Sources */,
 				1934504A1D9AF7D100BB08BC /* DropdownMenuView.swift in Sources */,
 				191E3FB71D87300C00963531 /* MainScreenLayout.swift in Sources */,
@@ -283,6 +290,7 @@
 				191E3F951D872D2400963531 /* AppDelegate.swift in Sources */,
 				191E3FB51D872DA300963531 /* MainViewController.swift in Sources */,
 				19E5A5A41D8EA22600B9B8DF /* TopCell.swift in Sources */,
+				191B46E01DA19CE600DE1C82 /* FilterCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
